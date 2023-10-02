@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="104.554318">
+<testcase classname="Validate the Shopping Functionality of IKEA" name="Validate the Shopping Functionality by adding a prodruct to Cart" time="34.224509">
+<system-out><![CDATA[When User should should Click Products option from the page.................passed
+And User should click Storage and organization from dropdown................passed
+And User should click Cabinets and Cupboards from options...................passed
+And user should click Storage units and Cabinets............................passed
+And user should click storage units and cabinets for home...................passed
+And User should scrolldown and click the product............................passed
+Then Use should click Add to Bag option.....................................passed
+Then User should click continue to bag and click continue to checkout.......passed
+Then User should click guest login..........................................passed
+Then User should enter valid details in all fields..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate the Shopping Functionality of IKEA" name="Validate the search functionality of IKEA" time="10.686832">
+<failure message="junit.framework.AssertionFailedError: expected:&lt;false&gt; but was:&lt;true&gt;&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:57)&#13;&#10;&#9;at junit.framework.Assert.failNotEquals(Assert.java:329)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:78)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:174)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:181)&#13;&#10;&#9;at org.IkeaStepDefrnition.IkeaSteps.user_should_select_the_item_from_the_page(IkeaSteps.java:156)&#13;&#10;&#9;at ✽.User should select the item from the page(src/test/resources/FeatureFile/Ikea.feature:21)&#13;&#10;"><![CDATA[When user should enter the Searchtext in Search Textbox.....................passed
+And User should select the item from the page...............................failed
+
+StackTrace:
+junit.framework.AssertionFailedError: expected:<false> but was:<true>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:174)
+	at junit.framework.Assert.assertEquals(Assert.java:181)
+	at org.IkeaStepDefrnition.IkeaSteps.user_should_select_the_item_from_the_page(IkeaSteps.java:156)
+	at ✽.User should select the item from the page(src/test/resources/FeatureFile/Ikea.feature:21)
+]]></failure>
+</testcase>
+<testcase classname="Validate the Shopping Functionality of IKEA" name="Validate the login functionality of IKEA" time="13.966228">
+<system-out><![CDATA[Given User Launch the Browser and Load the Url..............................passed
+When User enter the inValid username "jayashreen8693@gmail.com"and invalid password"Jaiikea@8693".passed
+And user should click continue button.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate the Shopping Functionality of IKEA" name="Validate the login functionality of IKEA 2" time="18.622499">
+<system-out><![CDATA[Given User Launch the Browser and Load the Url..............................passed
+When User enter the inValid username "sabari"and invalid password"sabari@123".passed
+And user should click continue button.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate the Shopping Functionality of IKEA" name="Validate the login functionality of IKEA 3" time="27.05425">
+<system-out><![CDATA[Given User Launch the Browser and Load the Url..............................passed
+When User enter the inValid username "j"and invalid password"@12345"........passed
+And user should click continue button.......................................passed
+]]></system-out>
+</testcase>
+</testsuite>
