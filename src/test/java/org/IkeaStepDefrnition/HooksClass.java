@@ -24,10 +24,11 @@ public class HooksClass extends UtilityClass{
     @After
     public void afterScenario(Scenario s) throws IOException {
        DateandTime();
+       if(s.isFailed()) {
        TakesScreenshot tk = (TakesScreenshot) driver;
        byte[] screenshot = tk.getScreenshotAs(OutputType.BYTES);
-       s.embed(screenshot, "image/png");
-    
+       s.embed(screenshot, "ikea.image/png");
+       }
     	
     }
 

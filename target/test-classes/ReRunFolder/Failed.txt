@@ -1,1 +1,1 @@
-src/test/resources/FeatureFile/Ikea.feature:19
+src/test/resources/FeatureFile/Ikea.feature:6:19
